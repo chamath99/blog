@@ -99,3 +99,17 @@
 
 <!-- <button (click)="toggle()">Toggle</button>
 <h1 *ngIf="display">Heading Tag</h1> -->
+
+<!-- 
+<h2>Send Data Child To Parent Componenet</h2>
+<app-child [item]="data"></app-child>
+<button (click)="updateData()">Update</button> -->
+
+
+
+<!-- <ul *ngFor="let users of userDetails">
+    <app-user-details [item]='users'></app-user-details>
+</ul> -->
+
+<li>{{data}}</li>
+<app-childex (updateDataEvent)="updateData($event)"></app-childex>

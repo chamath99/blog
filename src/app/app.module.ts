@@ -13,7 +13,10 @@ import { StudentListComponent } from './student-list/student-list.component';
 import { CountryComponent } from './country/country.component';
 import {UserAuthModule} from './user-auth/user-auth.module';
 import {FormsModule} from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChildComponent } from './child/child.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { ChildexComponent } from './childex/childex.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     FooterComponent,
     UsersListComponent,
     StudentListComponent,
-    CountryComponent
+    CountryComponent,
+    ChildComponent,
+    UserDetailsComponent,
+    ChildexComponent
   ],
   imports: [
     BrowserModule,

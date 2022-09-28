@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgForm} from '@angular/forms'
+import { ChildActivationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -63,4 +64,25 @@ export class AppComponent {
 //   // this.display=false;
 //   this.display=!this.display;
 // }
+// data=100;
+
+// updateData(){
+//   // this.data=Math.random();
+//   this.data=Math.floor(Math.random()*10);
+// }
+
+
+// userDetails=[
+//   {name:'Anil',email:'anil@test.com'},
+//   {name:'Sam',email:'Sam@test.com'},
+//   {name:'Chama',email:'Chama@test.com'},
+//   {name:'Dil',email:'Dil@test.com'},
+//   {name:'Chad',email:'Chad@test.com'},
+// ]
+data='';
+updateData(item:string){
+console.warn(item);
+this.data=item;
+
+}
 }
