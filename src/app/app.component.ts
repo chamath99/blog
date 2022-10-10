@@ -118,5 +118,11 @@ export class AppComponent {
 // return item.toUpperCase();
 // }
 
+// title='Angular Advanced Pipes';
+// user={
+//   name:'chama',
+//   age:25,
+// }
+
 }
 
