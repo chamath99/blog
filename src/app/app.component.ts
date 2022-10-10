@@ -124,5 +124,7 @@ export class AppComponent {
 //   age:25,
 // }
 
+
+title='Angular Custom Pipes';
 }
 
