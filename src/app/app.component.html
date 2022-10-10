@@ -134,5 +134,17 @@
 <h1>{{100|currency:'INR'}}</h1> -->
 
 
-<h1>{{title}}</h1>
-<h2>{{30|usdInr:80}}</h2>
+<!-- <h1>{{title}}</h1>
+<h2>{{30|usdInr:80}}</h2> -->
+
+<h2>{{title}}</h2>
+
+<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+    <input type="text" name="name" placeholder="Enter Name" ngModel>
+    <br><br>
+    <input type="password" name="password" placeholder="Enter Password" ngModel>
+    <br><br>
+    <button>Login</button>
+</form>
+
+<button (click)="loginUser(loginForm.value)">Outside Login</button>

@@ -125,6 +125,12 @@ export class AppComponent {
 // }
 
 
-title='Angular Custom Pipes';
+// title='Angular Custom Pipes';
+
+title='Angular Template Driven Form';
+loginUser(item:any){
+console.warn(item);
+
+}
 }
 
