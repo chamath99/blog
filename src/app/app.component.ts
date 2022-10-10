@@ -8,7 +8,7 @@ import { ChildActivationEnd } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog';
+  // title = 'blog';
   // getName(name:string){
   //   alert(name);
   // }
@@ -79,10 +79,44 @@ export class AppComponent {
 //   {name:'Dil',email:'Dil@test.com'},
 //   {name:'Chad',email:'Chad@test.com'},
 // ]
-data='';
-updateData(item:string){
-console.warn(item);
-this.data=item;
+
+// data='';
+// updateData(item:string){
+// console.warn(item);
+// this.data=item;
+
+// }
+
+// title='two way binding';
+// data:any;
+
+// title='template reference variable';
+
+// getVal(item:HTMLInputElement){
+// console.warn(item);
+// }
+
+// title='basic of typescript for angular';
+// data=20;
+// obj:{name:string,phn:number}={name:'string',phn:123}
+// arr:number[]=[20,30,40];
+
+// getData(item:any){
+//   this.obj={name:'peter',phn:456};
+//   this.arr=[1,3,5];
+//   return item;
+// }
+
+// getItem(){
+//   this.getData(30);
+// }
+
+// title='Angular Basic Pipes';
+// today=Date();
+
+// capstring(item:string){
+// return item.toUpperCase();
+// }
 
 }
-}
+
