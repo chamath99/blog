@@ -139,7 +139,7 @@
 
 <h2>{{title}}</h2>
 
-<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+<!-- <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
     <input type="text" required #name="ngModel" name="name" pattern="a-zA-Z+$" placeholder="Enter Name" ngModel>
     <br><span *ngIf="name.invalid && name.touched" style="color:red;" pattern="email">Please Enter Valid Input</span><br>
     <input type="password" name="password" minlength="2" required #password="ngModel" placeholder="Enter Password" ngModel>
@@ -147,4 +147,13 @@
     <button [disabled]="loginForm.invalid">Login</button>
 </form>
 
-<button (click)="loginUser(loginForm.value)">Outside Login</button>
+<button (click)="loginUser(loginForm.value)">Outside Login</button> -->
+
+
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" name="name" placeholder="Enter Name" formControlName="user">
+    <br>
+    <input type="password" name="password" placeholder="Enter Password" formControlName="password">
+    <br><br>
+    <button>Login</button>
+</form>

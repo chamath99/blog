@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgForm} from '@angular/forms'
+import {FormControl, FormGroup, NgForm} from '@angular/forms'
 import { ChildActivationEnd } from '@angular/router';
 
 @Component({
@@ -128,9 +128,21 @@ export class AppComponent {
 // title='Angular Custom Pipes';
 
 title='Angular Template Driven Form';
-loginUser(item:any){
-console.warn(item);
+// loginUser(item:any){
+// console.warn(item);
 
+// }
+
+loginForm=new FormGroup({
+ user:new FormControl(''),
+ password:new FormControl(''),
+//  user:new FormControl('chamaN'),
+//  password:new FormControl('123'),
+  
+}
+)
+loginUser(){
+  console.warn(this.loginForm.value);
 }
 }
 

@@ -17,7 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { ChildexComponent } from './childex/childex.component';
-import { UsdInrPipe } from './pipes/usd-inr.pipe'
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe'
   imports: [
     BrowserModule,
     FormsModule,
-    NgbModule 
+    NgbModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
