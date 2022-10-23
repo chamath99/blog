@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl, FormGroup, NgForm} from '@angular/forms'
+import {FormControl, FormGroup,Validators, NgForm} from '@angular/forms'
 import { ChildActivationEnd } from '@angular/router';
 
 @Component({
@@ -134,8 +134,9 @@ title='Angular Template Driven Form';
 // }
 
 loginForm=new FormGroup({
- user:new FormControl(''),
- password:new FormControl(''),
+//  user:new FormControl('',[Validators.required,Validators.email]),
+user:new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z]+$')]),
+password:new FormControl('',[Validators.required,Validators.minLength(5)]),
 //  user:new FormControl('chamaN'),
 //  password:new FormControl('123'),
   
@@ -143,6 +144,12 @@ loginForm=new FormGroup({
 )
 loginUser(){
   console.warn(this.loginForm.value);
+}
+get user(){
+  return this.loginForm.get('user');
+}
+get password(){
+  return this.loginForm.get('password');
 }
 }
 
