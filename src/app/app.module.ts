@@ -18,7 +18,8 @@ import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { ChildexComponent } from './childex/childex.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
-import {ReactiveFormsModule} from '@angular/forms'
+import {ReactiveFormsModule} from '@angular/forms';
+import { RedElDirective } from './red-el.directive'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {ReactiveFormsModule} from '@angular/forms'
     ChildComponent,
     UserDetailsComponent,
     ChildexComponent,
-    UsdInrPipe
+    UsdInrPipe,
+    RedElDirective
   ],
   imports: [
     BrowserModule,

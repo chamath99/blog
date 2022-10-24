@@ -149,8 +149,8 @@
 
 <button (click)="loginUser(loginForm.value)">Outside Login</button> -->
 
-
-<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+<!-- form validation -->
+<!-- <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
     <input type="text" name="name" placeholder="Enter Name" formControlName="user">
     <br>
     <span style="color: red;" *ngIf="user && user.invalid && user.touched">This Input Invalid</span>
@@ -160,4 +160,7 @@
     <span style="color: red;" *ngIf="password && password.invalid && password.touched">Password Input Invalid</span>
     <br><br>
     <button [disabled]="loginForm.invalid">Login</button>
-</form>
+</form> -->
+
+<h1>Angular Directives</h1>
+<h1 appRedEl>Angular Directives</h1>

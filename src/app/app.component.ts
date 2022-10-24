@@ -127,29 +127,35 @@ export class AppComponent {
 
 // title='Angular Custom Pipes';
 
-title='Angular Template Driven Form';
+// title='Angular Template Driven Form';
 // loginUser(item:any){
 // console.warn(item);
 
 // }
 
-loginForm=new FormGroup({
-//  user:new FormControl('',[Validators.required,Validators.email]),
-user:new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z]+$')]),
-password:new FormControl('',[Validators.required,Validators.minLength(5)]),
-//  user:new FormControl('chamaN'),
-//  password:new FormControl('123'),
+//form validation
+// loginForm=new FormGroup({
+// //  user:new FormControl('',[Validators.required,Validators.email]),
+// user:new FormControl('',[Validators.required,Validators.pattern('[a-zA-Z]+$')]),
+// password:new FormControl('',[Validators.required,Validators.minLength(5)]),
+// //  user:new FormControl('chamaN'),
+// //  password:new FormControl('123'),
   
-}
-)
-loginUser(){
-  console.warn(this.loginForm.value);
-}
-get user(){
-  return this.loginForm.get('user');
-}
-get password(){
-  return this.loginForm.get('password');
-}
+// }
+// )
+// loginUser(){
+//   console.warn(this.loginForm.value);
+// }
+// get user(){
+//   return this.loginForm.get('user');
+// }
+// get password(){
+//   return this.loginForm.get('password');
+// }
+
+
+title='Directive';
+
+
 }
 
